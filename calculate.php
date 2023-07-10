@@ -20,7 +20,7 @@
 
     $bmiCal = new Person($height , $weight);
 
-   $result = $bmiCal -> getBMI();
+    $result = $bmiCal -> getBMI();
 
     if( $result<=18.50){
         $c="น้ำหนักน้อย / ผอม";
@@ -42,12 +42,16 @@
     <h2>ค่าดัชนีมวลกาย (BMI) ของคุณ :</h2>
     
     <p align="center">
+
     <b>BMI : </b><?php echo strval($result);?> bmi<br /><br />
     <b>อยู่ในเกณท์ : </b><?php echo $c;?><br /><br />
     <b>ภาวะเสี่ยงต่อโรค : </b><?php echo $s;?>
     
     </p>   
     
+
+    <img src="01.jpg">
+
     </div>
     </body>
 </html>
